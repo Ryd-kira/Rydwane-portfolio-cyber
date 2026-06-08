@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cyber-bg: #060913;
+  --color-cyber-card: #0b0f1d;
+  --color-cyber-blue: #0088ff;
+  --color-cyber-cyan: #00f0ff;
+  --color-cyber-green: #39ff14;
+  --color-cyber-red: #ff3333;
+  --color-cyber-border: #14203d;
+  --color-cyber-text: #c0d1eb;
+}
+
+:root {
+  --cyber-bg: #060913;
+  --cyber-card: #0b0f1d;
+  --cyber-blue: #0088ff;
+  --cyber-cyan: #00f0ff;
+  --cyber-green: #39ff14;
+  --cyber-red: #ff3333;
+  --cyber-border: #14203d;
+  --cyber-text: #c0d1eb;
+}
+
+/* Optional Light Theme Override values */
+.light {
+  --cyber-bg: #f0f4f9;
+  --cyber-card: #ffffff;
+  --cyber-blue: #0066cc;
+  --cyber-cyan: #0088aa;
+  --cyber-green: #1f8a1d;
+  --cyber-red: #cc2222;
+  --cyber-border: #d1dbe5;
+  --cyber-text: #2c3e50;
+}
+
+body {
+  background-color: var(--cyber-bg);
+  color: var(--cyber-text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Futuristic Scanline Effect */
+.scanlines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+/* CRT monitor flicker effect */
+@keyframes crt-flicker {
+  0% { opacity: 0.985; }
+  50% { opacity: 0.995; }
+  100% { opacity: 0.985; }
+}
+
+.crt-flicker-effect {
+  animation: crt-flicker 0.15s infinite;
+}
+
+/* Tech Grid Background pattern */
+.tech-grid {
+  background-image: 
+    linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-position: center;
+}
+
+/* Neon Glow utilities */
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.25);
+  border-color: rgba(0, 240, 255, 0.4);
+}
+
+.glow-blue {
+  box-shadow: 0 0 15px rgba(0, 136, 255, 0.25);
+  border-color: rgba(0, 136, 255, 0.4);
+}
+
+.glow-green {
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.25);
+  border-color: rgba(57, 255, 20, 0.4);
+}
+
+.glow-text-cyan {
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.6);
+}
+
+.glow-text-green {
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.6);
+}
+
+/* Cyber Terminal Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cyber-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cyber-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyber-cyan);
+}
+
+/* Glassmorphism Cyber Card */
+.cyber-card-glass {
+  background: rgba(11, 15, 29, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 240, 255, 0.15);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cyber-card-glass:hover {
+  border-color: rgba(0, 240, 255, 0.4);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Cyber Timeline Nodes */
+.timeline-pulse {
+  position: relative;
+}
+
+.timeline-pulse::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -23px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--cyber-cyan);
+  box-shadow: 0 0 8px var(--cyber-cyan);
+  animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 240, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(0, 240, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 240, 255, 0);
+  }
+}

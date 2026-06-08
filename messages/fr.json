@@ -1,0 +1,220 @@
+{
+  "Common": {
+    "title": "Koladé | Console SOC & Portfolio Cybersécurité",
+    "slogan": "Work Hard, Never Give Up",
+    "status": "STATUT DU SYSTÈME : SÉCURISÉ",
+    "cta_cv": "Télécharger CV",
+    "cta_contact": "Contacter l'Opérateur",
+    "location": "Bénin, Cotonou",
+    "email": "hackmanrydwane@gmail.com",
+    "phone": "+229 0160203939 / +229 0156872733",
+    "nav": {
+      "home": "Console Accueil",
+      "about": "Profil Opérateur",
+      "skills": "Compétences Techniques",
+      "education": "Parcours Académique",
+      "projects": "Répertoire de Projets",
+      "cyberlab": "Laboratoire de Cyber-Simulation",
+      "services": "Catalogue de Services",
+      "blog": "Journal de Bord (Blog)",
+      "courses": "Académie & Formations",
+      "cv": "Aperçu du Curriculum",
+      "contact": "Canal de Contact"
+    }
+  },
+  "Home": {
+    "greeting": "Bonjour, je suis",
+    "name": "Koladé",
+    "role": "Réseaux, Systèmes & Cybersécurité",
+    "terminal_boot": "DÉMARRAGE DU PORTFOLIO SOC v2.4...",
+    "terminal_ready": "CONSOLE PRÊTE. BIENVENUE DANS L'ESPACE DE KOLADÉ.",
+    "system_logs": "Logs du Système : Flux actif..."
+  },
+  "About": {
+    "title": "PROFIL DE L'OPÉRATEUR",
+    "bio": "Je suis ICHOLA Rydwanoullah Koladé Alabi, diplômé passionné en Licence Professionnelle en Réseaux, Systèmes et Cybersécurité au Bénin. Mon objectif est de devenir Administrateur Systèmes & Réseaux avec une expertise pointue en Cybersécurité et Pentest.",
+    "vision_title": "Vision Professionnelle",
+    "vision_text": "Évoluer constamment vers la cybersécurité avancée. Je crois fermement au dépassement de soi, résumé par ma devise : \"Work Hard, Never Give Up\". Je m'investis activement dans la conception d'architectures sécurisées, le monitoring de réseaux et l'analyse de menaces.",
+    "stats": {
+      "level": "Niveau : LP RSN (Diplômé)",
+      "defense": "Défense : Wazuh, Suricata, Firewalling",
+      "offense": "Attaque : Pentest basique, Kali Linux",
+      "languages": "Langages : C, Java, PHP, JS, SQL"
+    }
+  },
+  "Skills": {
+    "title": "COMPÉTENCES SYSTÈME & SÉCURITÉ",
+    "categories": {
+      "networks": "Réseaux & Protocoles",
+      "security": "Cybersécurité Défensive/Offensive",
+      "os": "Systèmes d'Exploitation",
+      "dev": "Développement Logiciel",
+      "db": "Bases de Données",
+      "tools": "Outils Cyber & Monitoring"
+    }
+  },
+  "Education": {
+    "title": "PARCOURS ACADÉMIQUE",
+    "timeline": [
+      {
+        "year": "2023 - 2026",
+        "school": "Université d'Abomey-Calavi (EPAC / IUT)",
+        "degree": "Licence Professionnelle en Réseaux, Mobilité et Sécurité (RMS)",
+        "desc": "Formation approfondie en administration système (Linux/Windows), routage avancé, protocoles de sécurité, programmation réseau et supervision SOC."
+      },
+      {
+        "year": "Fév. 2026 - Avr. 2026",
+        "school": "UNIR International",
+        "degree": "Stage Académique — Vidéosurveillance IP & Sécurité Incendie",
+        "desc": "Installation et maintenance de systèmes de vidéosurveillance par caméras IP (configuration réseau, câblage, paramétrage NVR) et mise en place de systèmes de sécurité incendie (détecteurs, centrales d'alarme, plans d'évacuation)."
+      },
+      {
+        "year": "2023",
+        "school": "Certification & Auto-formation",
+        "degree": "Spécialisation Cyber & Pentesting",
+        "desc": "Pratique intensive en laboratoire personnel : déploiement d'IDS/IPS, analyse de paquets, initiation au hacking éthique sur plateformes dédiées."
+      }
+    ]
+  },
+  "Projects": {
+    "title": "PROJETS RÉCENTS",
+    "view_details": "Analyser le projet",
+    "tags": {
+      "all": "Tous les projets",
+      "security": "Cybersécurité",
+      "dev": "Développement",
+      "sys": "Systèmes & Réseaux"
+    },
+    "items": {
+      "wazuh": {
+        "title": "Déploiement IDS/IPS Wazuh & Suricata",
+        "desc": "Mise en place d'un environnement de supervision complet avec détection d'intrusions réseau via Suricata et gestion centralisée des alertes avec Wazuh."
+      },
+      "soc": {
+        "title": "SOC Lab Personnel",
+        "desc": "Laboratoire virtuel simulant une infrastructure d'entreprise avec pare-feu (pfSense), serveurs Windows/Linux, et monitoring actif des événements."
+      },
+      "marketplace": {
+        "title": "Plateforme Marketplace E-commerce",
+        "desc": "Création d'une boutique en ligne moderne et sécurisée, préparant la future intégration commerciale du projet 'Chariot'."
+      }
+    }
+  },
+  "CyberLab": {
+    "title": "LABORATOIRE CYBER & CONSOLE SOC",
+    "subtitle": "Analyse de logs, topologie réseau active et simulations d'attaques en temps réel.",
+    "scan_title": "Console de Scan Actif",
+    "scan_btn": "Lancer le scan de vulnérabilités",
+    "scan_running": "Analyse des ports en cours...",
+    "scan_complete": "Scan terminé. Aucun port critique ouvert en externe.",
+    "log_console": "Console de Logs Wazuh / Suricata (Live)",
+    "topology_title": "Topologie de l'Architecture Réseau Sécurisée"
+  },
+  "Services": {
+    "title": "CATALOGUE DE SERVICES",
+    "items": [
+      {
+        "title": "Administration Systèmes",
+        "desc": "Installation, configuration et sécurisation des serveurs Linux (Debian, Rocky) et Windows Server (Active Directory, GPO)."
+      },
+      {
+        "title": "Administration Réseaux",
+        "desc": "Configuration de commutateurs, routeurs (Cisco, Mikrotik), adressage, VLANs, VPNs et protocoles de routage."
+      },
+      {
+        "title": "Cybersécurité Défensive",
+        "desc": "Supervision, configuration d'IDS/IPS, analyse de logs de sécurité et renforcement (hardening) de serveurs."
+      },
+      {
+        "title": "Pentest Basique",
+        "desc": "Audits de sécurité d'applications web et infrastructures réseaux locales, scans de vulnérabilités."
+      },
+      {
+        "title": "Développement Web",
+        "desc": "Conception de sites et d'applications modernes, performantes et sécurisées avec Next.js, React et PHP."
+      },
+      {
+        "title": "Bases de Données",
+        "desc": "Modélisation, optimisation et administration de systèmes PostgreSQL, MySQL et SQLite."
+      },
+      {
+        "title": "Support IT & Assistance",
+        "desc": "Diagnostic des pannes réseau, résolution d'incidents serveurs et maintenance corrective d'urgence."
+      },
+      {
+        "title": "Formation & Accompagnement",
+        "desc": "Sessions de sensibilisation à la cybersécurité, aide à la prise en main de Linux et initiation aux réseaux."
+      }
+    ]
+  },
+  "Blog": {
+    "title": "JOURNAL DE BORD & CYBER ARTICLES",
+    "read_more": "Lire l'article",
+    "no_articles": "Aucun article trouvé dans cette catégorie.",
+    "categories": {
+      "all": "Tous les articles",
+      "cyber": "Cybersécurité",
+      "network": "Réseaux",
+      "linux": "Linux & DevOps",
+      "tutorials": "Tutoriels"
+    }
+  },
+  "Courses": {
+    "title": "ACADÉMIE & ACCÈS COURS",
+    "redirect_msg": "Cette section va fusionner avec la future marketplace \"Chariot\".",
+    "access_btn": "Accéder gratuitement au cours",
+    "goto_chariot": "Découvrir la boutique Chariot",
+    "categories": {
+      "all": "Tous les cours",
+      "cyber": "Introduction Cyber",
+      "networks": "Bases des Réseaux",
+      "linux": "Maîtriser Linux"
+    },
+    "items": [
+      {
+        "title": "Fondamentaux de la Cybersécurité",
+        "category": "cyber",
+        "duration": "4h 30m",
+        "level": "Débutant",
+        "desc": "Comprendre les menaces courantes, le chiffrement et les concepts fondamentaux de la sécurité de l'information."
+      },
+      {
+        "title": "Réseaux Informatiques : Du Modèle OSI au TCP/IP",
+        "category": "networks",
+        "duration": "6h 15m",
+        "level": "Intermédiaire",
+        "desc": "Maîtriser le fonctionnement des protocoles, l'adressage IP, le routage et le sous-réseautage."
+      },
+      {
+        "title": "Administration Linux Avancée",
+        "category": "linux",
+        "duration": "8h 00m",
+        "level": "Avancé",
+        "desc": "Gestion des permissions, scripts Bash automatiques, configuration de serveurs web et sécurisation SSH."
+      }
+    ]
+  },
+  "CV": {
+    "title": "CURRICULUM VITAE",
+    "download_btn": "Télécharger au format PDF",
+    "downloading": "Téléchargement en cours...",
+    "sections": {
+      "profile": "Profil professionnel",
+      "education": "Diplômes & Études",
+      "experience": "Expériences clés",
+      "skills": "Compétences clés",
+      "languages": "Langues"
+    }
+  },
+  "Contact": {
+    "title": "CANAL DE TRANSMISSION (CONTACT)",
+    "whatsapp_btn": "Ouvrir une session WhatsApp",
+    "form_name": "Identifiant / Nom",
+    "form_email": "Canal de retour / Email",
+    "form_message": "Message / Transmission cryptée",
+    "form_submit": "Transmettre le Message",
+    "sending": "Transmission en cours...",
+    "success": "Message transmis avec succès. L'opérateur vous contactera rapidement.",
+    "error": "Erreur lors de la transmission. Veuillez réessayer ou utiliser WhatsApp."
+  }
+}

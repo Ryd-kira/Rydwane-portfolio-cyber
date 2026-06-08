@@ -1,0 +1,303 @@
+{
+  "skills": [
+    {
+      "category": "networks",
+      "skills": [
+        { "name": "Cisco IOS Routing & Switching", "level": 85 },
+        { "name": "VPNs (IPsec, OpenVPN)", "level": 80 },
+        { "name": "VLANs & Subnetting", "level": 90 },
+        { "name": "TCP/IP & Network Protocols", "level": 90 }
+      ]
+    },
+    {
+      "category": "security",
+      "skills": [
+        { "name": "Wazuh SIEM / IDS", "level": 80 },
+        { "name": "Suricata NIDS/NIPS", "level": 78 },
+        { "name": "pfSense & Firewall hardening", "level": 82 },
+        { "name": "Wireshark Packet Analysis", "level": 85 }
+      ]
+    },
+    {
+      "category": "os",
+      "skills": [
+        { "name": "Linux (Debian, Rocky Linux)", "level": 88 },
+        { "name": "Bash Scripting", "level": 80 },
+        { "name": "Windows Server (Active Directory)", "level": 75 },
+        { "name": "GPOs & Policies management", "level": 72 }
+      ]
+    },
+    {
+      "category": "dev",
+      "skills": [
+        { "name": "C Language", "level": 65 },
+        { "name": "Java Programming", "level": 70 },
+        { "name": "PHP / Web Backends", "level": 75 },
+        { "name": "JavaScript & TypeScript", "level": 78 }
+      ]
+    },
+    {
+      "category": "db",
+      "skills": [
+        { "name": "PostgreSQL & SQLite", "level": 80 },
+        { "name": "MySQL / MariaDB", "level": 78 },
+        { "name": "SQL Query Optimization", "level": 75 }
+      ]
+    },
+    {
+      "category": "tools",
+      "skills": [
+        { "name": "Kali Linux / Pentesting OS", "level": 85 },
+        { "name": "Nmap Network Scanning", "level": 90 },
+        { "name": "Metasploit & Exploit testing", "level": 65 },
+        { "name": "Nessus Vulnerability Auditing", "level": 70 }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "wazuh",
+      "category": "security",
+      "title": {
+        "fr": "Déploiement IDS/IPS Wazuh & Suricata",
+        "en": "Wazuh & Suricata IDS/IPS Deployment"
+      },
+      "desc": {
+        "fr": "Mise en place d'un environnement de supervision complet avec détection d'intrusions réseau via Suricata et gestion centralisée des alertes avec Wazuh.",
+        "en": "Implementation of a complete monitoring environment with network intrusion detection via Suricata and centralized alert management with Wazuh."
+      },
+      "techs": ["Wazuh SIEM", "Suricata NIDS", "Debian Linux", "Elasticsearch", "Logstash"],
+      "githubUrl": "https://github.com/Ryd-kira"
+    },
+    {
+      "id": "soc",
+      "category": "sys",
+      "title": {
+        "fr": "SOC Lab Personnel",
+        "en": "Personal SOC Lab"
+      },
+      "desc": {
+        "fr": "Laboratoire virtuel simulant une infrastructure d'entreprise avec pare-feu (pfSense), serveurs Windows/Linux, et monitoring actif des événements.",
+        "en": "Virtual laboratory simulating a corporate infrastructure with firewalls (pfSense), Windows/Linux servers, and active event monitoring."
+      },
+      "techs": ["pfSense Firewall", "Active Directory", "Proxmox VE", "VLANs", "Syslog Server"],
+      "githubUrl": "https://github.com/Ryd-kira"
+    },
+    {
+      "id": "marketplace",
+      "category": "dev",
+      "title": {
+        "fr": "Plateforme Marketplace E-commerce",
+        "en": "E-commerce Marketplace Platform"
+      },
+      "desc": {
+        "fr": "Création d'une boutique en ligne moderne et sécurisée, préparant la future intégration commerciale du projet 'Chariot'.",
+        "en": "Creation of a modern and secure online shop, preparing the future commercial integration of the 'Chariot' project."
+      },
+      "techs": ["Next.js", "TypeScript", "TailwindCSS", "PostgreSQL", "Stripe API"],
+      "githubUrl": "https://github.com/Ryd-kira"
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": "wazuh-suricata",
+      "category": "cyber",
+      "date": "2026-05-15",
+      "author": "Koladé",
+      "title": {
+        "fr": "Déploiement de Wazuh avec Suricata sur Debian",
+        "en": "Deploying Wazuh with Suricata on Debian Server"
+      },
+      "desc": {
+        "fr": "Guide complet pour installer et lier le moteur NIDS Suricata avec le SIEM Wazuh pour un monitoring SOC en temps réel.",
+        "en": "Step-by-step guide to install and hook the Suricata NIDS engine to the Wazuh SIEM client for real-time security operations."
+      },
+      "content": {
+        "fr": "## Introduction\nDans ce tutoriel, nous allons voir comment coupler Wazuh et Suricata sous Debian 12 pour analyser et remonter les alertes réseaux sur notre console SIEM.\n\n### 1. Installation de Suricata\nExécutez la commande suivante :\n```bash\nsudo apt install suricata -y\n```\n\n### 2. Configuration des interfaces\nÉditez `/etc/suricata/suricata.yaml` et spécifiez votre interface réseau principale (ex: `eth0`).\n\n### 3. Liaison avec Wazuh Agent\nAjoutez ce bloc dans la configuration de l'agent `/var/ossec/etc/ossec.conf` :\n```xml\n<localfile>\n  <log_format>json</log_format>\n  <location>/var/log/suricata/eve.json</location>\n</localfile>\n```\n\n### Conclusion\nRedémarrez les services. Vos alertes de paquets réseau suspects apparaîtront désormais directement dans le dashboard de votre console Wazuh.",
+        "en": "## Introduction\nIn this tutorial, we will configure Suricata on Debian 12 and redirect its network events into the Wazuh SIEM console.\n\n### 1. Install Suricata\nRun the install command:\n```bash\nsudo apt install suricata -y\n```\n\n### 2. Interface configuration\nEdit the `/etc/suricata/suricata.yaml` file to set your network interfaces.\n\n### 3. Hooking with Wazuh Agent\nConfigure `/var/ossec/etc/ossec.conf` to monitor the Suricata json logs:\n```xml\n<localfile>\n  <log_format>json</log_format>\n  <location>/var/log/suricata/eve.json</location>\n</localfile>\n```\n\n### Conclusion\nRestart the services. Network alerts will now pop up in your Wazuh dashboard."
+      }
+    },
+    {
+      "id": "linux-hardening",
+      "category": "linux",
+      "date": "2026-04-10",
+      "author": "Koladé",
+      "title": {
+        "fr": "Sécurisation Linux : Guide Pratique de Hardening",
+        "en": "Linux Hardening: Practical Security Checklist"
+      },
+      "desc": {
+        "fr": "Découvrez les étapes indispensables pour sécuriser vos serveurs Linux en production (SSH, PAM, UFW, Sysctl).",
+        "en": "Discover key practices to harden your Linux servers against common attacks (SSH key setup, PAM modules, UFW, sysctl configs)."
+      },
+      "content": {
+        "fr": "## Sécurisation SSH\nLe premier point d'entrée d'un serveur Linux est le service SSH. Pour le durcir :\n- Changez le port par défaut (ex: 2222)\n- Désactivez le login root (`PermitRootLogin no`)\n- Désactivez l'authentification par mot de passe et imposez l'usage de clés SSH.\n\n## UFW Firewall\nActivez les règles indispensables :\n```bash\nsudo ufw default deny incoming\nsudo ufw default allow outgoing\nsudo ufw allow 2222/tcp\nsudo ufw enable\n```",
+        "en": "## Harden SSH\nSecure SSH by editing `/etc/ssh/sshd_config`:\n- Change default port to something else (e.g., 2222)\n- Disable root logins (`PermitRootLogin no`)\n- Use key-based authentication only.\n\n## UFW Configuration\nRun these commands:\n```bash\nsudo ufw default deny incoming\nsudo ufw default allow outgoing\nsudo ufw allow 2222/tcp\nsudo ufw enable\n```"
+      }
+    }
+  ],
+  "education": [
+    {
+      "year": {
+        "fr": "2023 - 2026",
+        "en": "2023 - 2026"
+      },
+      "school": {
+        "fr": "Université d'Abomey-Calavi (EPAC / IUT)",
+        "en": "University of Abomey-Calavi (EPAC / IUT)"
+      },
+      "degree": {
+        "fr": "Licence Professionnelle en Réseaux, Mobilité et Sécurité (RMS)",
+        "en": "Professional License in Networks, Mobility and Security (RMS)"
+      },
+      "desc": {
+        "fr": "Formation approfondie en administration système (Linux/Windows), routage avancé, protocoles de sécurité, programmation réseau et supervision SOC.",
+        "en": "In-depth training in system administration (Linux/Windows), advanced routing, security protocols, network programming, and SOC supervision."
+      }
+    },
+    {
+      "year": {
+        "fr": "Fév. 2026 - Avr. 2026",
+        "en": "Feb. 2026 - Apr. 2026"
+      },
+      "school": {
+        "fr": "UNIR International",
+        "en": "UNIR International"
+      },
+      "degree": {
+        "fr": "Stage Académique — Vidéosurveillance IP & Sécurité Incendie",
+        "en": "Academic Internship — IP Video Surveillance & Fire Security"
+      },
+      "desc": {
+        "fr": "Installation et maintenance de systèmes de vidéosurveillance par caméras IP (configuration réseau, câblage, paramétrage NVR) et mise en place de systèmes de sécurité incendie (détecteurs, centrales d'alarme, plans d'évacuation).",
+        "en": "Installation and maintenance of IP camera video surveillance systems (network configuration, cabling, NVR setup) and deployment of fire security systems (detectors, alarm panels, evacuation plans)."
+      }
+    },
+    {
+      "year": {
+        "fr": "2023",
+        "en": "2023"
+      },
+      "school": {
+        "fr": "Certification & Auto-formation",
+        "en": "Certification & Self-learning"
+      },
+      "degree": {
+        "fr": "Spécialisation Cyber & Pentesting",
+        "en": "Cyber & Pentesting Specialization"
+      },
+      "desc": {
+        "fr": "Pratique intensive en laboratoire personnel : déploiement d'IDS/IPS, analyse de paquets, initiation au hacking éthique sur plateformes dédiées.",
+        "en": "Intensive practice in personal lab: IDS/IPS deployment, packet analysis, and ethical hacking initiation on dedicated learning platforms."
+      }
+    }
+  ],
+  "services": [
+    {
+      "title": { "fr": "Administration Systèmes", "en": "System Administration" },
+      "desc": {
+        "fr": "Installation, configuration et sécurisation des serveurs Linux (Debian, Rocky) et Windows Server (Active Directory, GPO).",
+        "en": "Installation, configuration, and security hardening of Linux servers (Debian, Rocky) and Windows Server (Active Directory, GPOs)."
+      }
+    },
+    {
+      "title": { "fr": "Administration Réseaux", "en": "Network Administration" },
+      "desc": {
+        "fr": "Configuration de commutateurs, routeurs (Cisco, Mikrotik), adressage, VLANs, VPNs et protocoles de routage.",
+        "en": "Configuration of switches, routers (Cisco, Mikrotik), addressing schemes, VLANs, VPNs, and routing protocols."
+      }
+    },
+    {
+      "title": { "fr": "Cybersécurité Défensive", "en": "Defensive Cybersecurity" },
+      "desc": {
+        "fr": "Supervision, configuration d'IDS/IPS, analyse de logs de sécurité et renforcement (hardening) de serveurs.",
+        "en": "Supervision, IDS/IPS configuration, security logs analysis, and server hardening."
+      }
+    },
+    {
+      "title": { "fr": "Pentest Basique", "en": "Basic Pentesting" },
+      "desc": {
+        "fr": "Audits de sécurité d'applications web et infrastructures réseaux locales, scans de vulnérabilités.",
+        "en": "Security audits of web applications and local network infrastructures, vulnerability scanning."
+      }
+    },
+    {
+      "title": { "fr": "Développement Web", "en": "Web Development" },
+      "desc": {
+        "fr": "Conception de sites et d'applications modernes, performantes et sécurisées avec Next.js, React et PHP.",
+        "en": "Designing modern, performant, and secure websites and applications with Next.js, React, and PHP."
+      }
+    },
+    {
+      "title": { "fr": "Bases de Données", "en": "Databases" },
+      "desc": {
+        "fr": "Modélisation, optimisation et administration de systèmes PostgreSQL, MySQL et SQLite.",
+        "en": "Modeling, optimization, and administration of PostgreSQL, MySQL, and SQLite systems."
+      }
+    },
+    {
+      "title": { "fr": "Support IT & Assistance", "en": "IT Support & Assistance" },
+      "desc": {
+        "fr": "Diagnostic des pannes réseau, résolution d'incidents serveurs et maintenance corrective d'urgence.",
+        "en": "Network troubleshooting, server incident resolution, and emergency corrective maintenance."
+      }
+    },
+    {
+      "title": { "fr": "Formation & Accompagnement", "en": "Training & Coaching" },
+      "desc": {
+        "fr": "Sessions de sensibilisation à la cybersécurité, aide à la prise en main de Linux et initiation aux réseaux.",
+        "en": "Cybersecurity awareness sessions, assistance with Linux, and introduction to computer networks."
+      }
+    }
+  ],
+  "courses": [
+    {
+      "title": {
+        "fr": "Fondamentaux de la Cybersécurité",
+        "en": "Cybersecurity Fundamentals"
+      },
+      "category": "cyber",
+      "duration": "4h 30m",
+      "level": {
+        "fr": "Débutant",
+        "en": "Beginner"
+      },
+      "desc": {
+        "fr": "Comprendre les menaces courantes, le chiffrement et les concepts fondamentaux de la sécurité de l'information.",
+        "en": "Understand current threats, encryption, and core concepts of information security."
+      }
+    },
+    {
+      "title": {
+        "fr": "Réseaux Informatiques : Du Modèle OSI au TCP/IP",
+        "en": "Computer Networks: From OSI to TCP/IP"
+      },
+      "category": "networks",
+      "duration": "6h 15m",
+      "level": {
+        "fr": "Intermédiaire",
+        "en": "Intermediate"
+      },
+      "desc": {
+        "fr": "Maîtriser le fonctionnement des protocoles, l'adressage IP, le routage et le sous-réseautage.",
+        "en": "Master protocol mechanics, IP addressing, routing, and subnetting."
+      }
+    },
+    {
+      "title": {
+        "fr": "Administration Linux Avancée",
+        "en": "Advanced Linux Administration"
+      },
+      "category": "linux",
+      "duration": "8h 00m",
+      "level": {
+        "fr": "Avancé",
+        "en": "Advanced"
+      },
+      "desc": {
+        "fr": "Gestion des permissions, scripts Bash automatiques, configuration de serveurs web et sécurisation SSH.",
+        "en": "Permissions management, automated Bash scripting, web server configuration, and SSH hardening."
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "Common": {
+    "title": "Koladé | SOC Console & Cybersecurity Portfolio",
+    "slogan": "Work Hard, Never Give Up",
+    "status": "SYSTEM STATUS: SECURE",
+    "cta_cv": "Download CV",
+    "cta_contact": "Contact Operator",
+    "location": "Benin, Cotonou",
+    "email": "hackmanrydwane@gmail.com",
+    "phone": "+229 0160203939 / +229 0156872733",
+    "nav": {
+      "home": "Home Console",
+      "about": "Operator Profile",
+      "skills": "Technical Skills",
+      "education": "Academic Journey",
+      "projects": "Project Registry",
+      "cyberlab": "Cyber Simulation Lab",
+      "services": "Service Catalog",
+      "blog": "Logbook (Blog)",
+      "courses": "Academy & Courses",
+      "cv": "Resume Preview",
+      "contact": "Contact Channel"
+    }
+  },
+  "Home": {
+    "greeting": "Hello, I am",
+    "name": "Koladé",
+    "role": "Systems, Networks & Cybersecurity",
+    "terminal_boot": "BOOTING SOC PORTFOLIO v2.4...",
+    "terminal_ready": "CONSOLE READY. WELCOME TO KOLADÉ'S SPACE.",
+    "system_logs": "System Logs: Active stream..."
+  },
+  "About": {
+    "title": "OPERATOR PROFILE",
+    "bio": "I am ICHOLA Rydwanoullah Koladé Alabi, a passionate graduate with a Professional License in Networks, Systems, and Cybersecurity in Benin. My goal is to become a Systems & Network Administrator with expertise in Cybersecurity and Pentesting.",
+    "vision_title": "Professional Vision",
+    "vision_text": "Constantly evolving towards advanced cybersecurity. I firmly believe in pushing limits, summarized by my motto: \"Work Hard, Never Give Up\". I am actively involved in designing secure architectures, network monitoring, and threat analysis.",
+    "stats": {
+      "level": "Level: LP RSN (Graduate)",
+      "defense": "Defense: Wazuh, Suricata, Firewalling",
+      "offense": "Offense: Basic Pentest, Kali Linux",
+      "languages": "Languages: C, Java, PHP, JS, SQL"
+    }
+  },
+  "Skills": {
+    "title": "SYSTEM & SECURITY SKILLS",
+    "categories": {
+      "networks": "Networks & Protocols",
+      "security": "Defensive/Offensive Cyber",
+      "os": "Operating Systems",
+      "dev": "Software Development",
+      "db": "Databases",
+      "tools": "Cyber Tools & Monitoring"
+    }
+  },
+  "Education": {
+    "title": "ACADEMIC JOURNEY",
+    "timeline": [
+      {
+        "year": "2023 - 2026",
+        "school": "University of Abomey-Calavi (EPAC / IUT)",
+        "degree": "Professional License in Networks, Mobility and Security (RMS)",
+        "desc": "In-depth training in system administration (Linux/Windows), advanced routing, security protocols, network programming, and SOC supervision."
+      },
+      {
+        "year": "Feb. 2026 - Apr. 2026",
+        "school": "UNIR International",
+        "degree": "Academic Internship — IP Video Surveillance & Fire Security",
+        "desc": "Installation and maintenance of IP camera video surveillance systems (network configuration, cabling, NVR setup) and deployment of fire security systems (detectors, alarm panels, evacuation plans)."
+      },
+      {
+        "year": "2023",
+        "school": "Certification & Self-learning",
+        "degree": "Cyber & Pentesting Specialization",
+        "desc": "Intensive practice in personal lab: IDS/IPS deployment, packet analysis, and ethical hacking initiation on dedicated learning platforms."
+      }
+    ]
+  },
+  "Projects": {
+    "title": "RECENT PROJECTS",
+    "view_details": "Analyze Project",
+    "tags": {
+      "all": "All Projects",
+      "security": "Cybersecurity",
+      "dev": "Development",
+      "sys": "Systems & Networks"
+    },
+    "items": {
+      "wazuh": {
+        "title": "Wazuh & Suricata IDS/IPS Deployment",
+        "desc": "Implementation of a complete monitoring environment with network intrusion detection via Suricata and centralized alert management with Wazuh."
+      },
+      "soc": {
+        "title": "Personal SOC Lab",
+        "desc": "Virtual laboratory simulating a corporate infrastructure with firewalls (pfSense), Windows/Linux servers, and active event monitoring."
+      },
+      "marketplace": {
+        "title": "E-commerce Marketplace Platform",
+        "desc": "Creation of a modern and secure online shop, preparing the future commercial integration of the 'Chariot' project."
+      }
+    }
+  },
+  "CyberLab": {
+    "title": "CYBER LAB & SOC CONSOLE",
+    "subtitle": "Log analysis, active network topology, and real-time attack simulations.",
+    "scan_title": "Active Scan Console",
+    "scan_btn": "Launch Vulnerability Scan",
+    "scan_running": "Analyzing ports...",
+    "scan_complete": "Scan complete. No critical ports open externally.",
+    "log_console": "Wazuh / Suricata Log Console (Live)",
+    "topology_title": "Secure Network Architecture Topology"
+  },
+  "Services": {
+    "title": "SERVICE CATALOG",
+    "items": [
+      {
+        "title": "System Administration",
+        "desc": "Installation, configuration, and security hardening of Linux servers (Debian, Rocky) and Windows Server (Active Directory, GPOs)."
+      },
+      {
+        "title": "Network Administration",
+        "desc": "Configuration of switches, routers (Cisco, Mikrotik), addressing schemes, VLANs, VPNs, and routing protocols."
+      },
+      {
+        "title": "Defensive Cybersecurity",
+        "desc": "Supervision, IDS/IPS configuration, security logs analysis, and server hardening."
+      },
+      {
+        "title": "Basic Pentesting",
+        "desc": "Security audits of web applications and local network infrastructures, vulnerability scanning."
+      },
+      {
+        "title": "Web Development",
+        "desc": "Designing modern, performant, and secure websites and applications with Next.js, React, and PHP."
+      },
+      {
+        "title": "Databases",
+        "desc": "Modeling, optimization, and administration of PostgreSQL, MySQL, and SQLite systems."
+      },
+      {
+        "title": "IT Support & Assistance",
+        "desc": "Network troubleshooting, server incident resolution, and emergency corrective maintenance."
+      },
+      {
+        "title": "Training & Coaching",
+        "desc": "Cybersecurity awareness sessions, assistance with Linux, and introduction to computer networks."
+      }
+    ]
+  },
+  "Blog": {
+    "title": "LOGBOOK & CYBER ARTICLES",
+    "read_more": "Read Article",
+    "no_articles": "No articles found in this category.",
+    "categories": {
+      "all": "All Articles",
+      "cyber": "Cybersecurity",
+      "network": "Networks",
+      "linux": "Linux & DevOps",
+      "tutorials": "Tutorials"
+    }
+  },
+  "Courses": {
+    "title": "ACADEMY & COURSE ACCESS",
+    "redirect_msg": "This section will merge with the future \"Chariot\" marketplace.",
+    "access_btn": "Access Course for Free",
+    "goto_chariot": "Explore Chariot Store",
+    "categories": {
+      "all": "All Courses",
+      "cyber": "Intro to Cyber",
+      "networks": "Network Basics",
+      "linux": "Mastering Linux"
+    },
+    "items": [
+      {
+        "title": "Cybersecurity Fundamentals",
+        "category": "cyber",
+        "duration": "4h 30m",
+        "level": "Beginner",
+        "desc": "Understand current threats, encryption, and core concepts of information security."
+      },
+      {
+        "title": "Computer Networks: From OSI to TCP/IP",
+        "category": "networks",
+        "duration": "6h 15m",
+        "level": "Intermediate",
+        "desc": "Master protocol mechanics, IP addressing, routing, and subnetting."
+      },
+      {
+        "title": "Advanced Linux Administration",
+        "category": "linux",
+        "duration": "8h 00m",
+        "level": "Advanced",
+        "desc": "Permissions management, automated Bash scripting, web server configuration, and SSH hardening."
+      }
+    ]
+  },
+  "CV": {
+    "title": "CURRICULUM VITAE",
+    "download_btn": "Download PDF Version",
+    "downloading": "Downloading...",
+    "sections": {
+      "profile": "Professional Profile",
+      "education": "Education & Degrees",
+      "experience": "Key Experience",
+      "skills": "Key Skills",
+      "languages": "Languages"
+    }
+  },
+  "Contact": {
+    "title": "TRANSMISSION CHANNEL (CONTACT)",
+    "whatsapp_btn": "Open WhatsApp Session",
+    "form_name": "Identifier / Name",
+    "form_email": "Return Channel / Email",
+    "form_message": "Message / Encrypted Transmission",
+    "form_submit": "Transmit Message",
+    "sending": "Transmitting...",
+    "success": "Message transmitted successfully. The operator will contact you shortly.",
+    "error": "Error during transmission. Please try again or use WhatsApp."
+  }
+}
