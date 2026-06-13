@@ -60,13 +60,19 @@ export default function AdminPage() {
 
   const verifyAccess = async (pass: string) => {
     try {
-      const res = await fetch("/api/portfolio/content");
+      const res = await fetch("/api/portfolio/auth", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password: pass })
+      });
       if (res.ok) {
-        // Test auth by attempting a dry POST or simply saving locally
         localStorage.setItem("soc_admin_pass", pass);
         setIsAuthorized(true);
         setErrorMsg("");
         fetchData();
+      } else {
+        const data = await res.json();
+        setErrorMsg(data.error || "Mot de passe incorrect.");
       }
     } catch (err) {
       setErrorMsg("Erreur lors de la connexion aux APIs.");

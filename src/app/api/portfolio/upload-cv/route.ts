@@ -10,7 +10,7 @@ export async function POST(request: Request) {
     const password = formData.get("password") as string;
 
     // Timing-safe password verification
-    const expectedPassword = process.env.ADMIN_PASSWORD || "admin";
+    const expectedPassword = process.env.ADMIN_PASSPHRASE || process.env.ADMIN_PASSWORD || "admin";
     if (typeof password !== "string" || !password) {
       return NextResponse.json({ error: "Unauthorized: Missing credentials" }, { status: 401 });
     }
